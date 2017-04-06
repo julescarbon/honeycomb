@@ -1,0 +1,3618 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset='utf-8' />
+  <title>  | Documentation</title>
+  <meta name='viewport' content='width=device-width,initial-scale=1'>
+  <link href='assets/bass.css' type='text/css' rel='stylesheet' />
+  <link href='assets/style.css' type='text/css' rel='stylesheet' />
+  <link href='assets/github.css' type='text/css' rel='stylesheet' />
+</head>
+<body class='documentation'>
+  <div class='max-width-4 mx-auto'>
+    <div class='clearfix md-mxn2'>
+      <div class='fixed xs-hide fix-3 overflow-auto max-height-100'>
+        <div class='py1 px2'>
+          <h3 class='mb0 no-anchor'></h3>
+          <div class='mb1'><code></code></div>
+          <input
+            placeholder='Filter'
+            id='filter-input'
+            class='col12 block input'
+            type='text' />
+          <div id='toc'>
+            <ul class='list-reset h5 py1-ul'>
+              
+                
+                <li><a
+                  href='#grid'
+                  class="">
+                  Grid
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#gridcolsize'
+                  class="">
+                  Grid#colSize
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#gridhexagon'
+                  class="">
+                  Grid#hexagon
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#gridhextopoint'
+                  class="">
+                  Grid#hexToPoint
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#gridparallelogram'
+                  class="">
+                  Grid#parallelogram
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#gridpointtohex'
+                  class="">
+                  Grid#pointToHex
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#gridrectangle'
+                  class="">
+                  Grid#rectangle
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#gridrowsize'
+                  class="">
+                  Grid#rowSize
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#gridtriangle'
+                  class="">
+                  Grid#triangle
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#hex'
+                  class="">
+                  Hex
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#hexadd'
+                  class="">
+                  Hex.add
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#hexdistance'
+                  class="">
+                  Hex.distance
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#hexhexesbetween'
+                  class="">
+                  Hex.hexesBetween
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#hexisvalidsize'
+                  class="">
+                  Hex.isValidSize
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#hexlerp'
+                  class="">
+                  Hex.lerp
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#hexneighbor'
+                  class="">
+                  Hex.neighbor
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#hexnudge'
+                  class="">
+                  Hex.nudge
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#hexround'
+                  class="">
+                  Hex.round
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#hexsubtract'
+                  class="">
+                  Hex.subtract
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#hexthirdcoordinate'
+                  class="">
+                  Hex.thirdCoordinate
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#hexcenter'
+                  class="">
+                  Hex#center
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#hexcoordinates'
+                  class="">
+                  Hex#coordinates
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#hexheight'
+                  class="">
+                  Hex#height
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#hexisflat'
+                  class="">
+                  Hex#isFlat
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#hexispointy'
+                  class="">
+                  Hex#isPointy
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#hexoppositecornerdistance'
+                  class="">
+                  Hex#oppositeCornerDistance
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#hexoppositesidedistance'
+                  class="">
+                  Hex#oppositeSideDistance
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#hextopoint'
+                  class="">
+                  Hex#toPoint
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#hexview'
+                  class="">
+                  Hex#view
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#hexwidth'
+                  class="">
+                  Hex#width
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#hexfactory'
+                  class="">
+                  HexFactory
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#orientations'
+                  class=" toggle-sibling">
+                  ORIENTATIONS
+                  <span class='icon'>▸</span>
+                </a>
+                
+                <div class='toggle-target display-none'>
+                  
+                  <ul class='list-reset py1-ul pl1'>
+                    <li class='h5'><span>Static members</span></li>
+                    
+                      <li><a
+                        href='#ORIENTATIONS.FLAT'
+                        class='regular pre-open'>
+                        .FLAT
+                      </a></li>
+                    
+                      <li><a
+                        href='#ORIENTATIONS.POINTY'
+                        class='regular pre-open'>
+                        .POINTY
+                      </a></li>
+                    
+                    </ul>
+                  
+                  
+                  
+                </div>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#point'
+                  class="">
+                  Point
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#pointadd'
+                  class="">
+                  Point#add
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#pointdivide'
+                  class="">
+                  Point#divide
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#pointinvert'
+                  class="">
+                  Point#invert
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#pointmultiply'
+                  class="">
+                  Point#multiply
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#pointsubtract'
+                  class="">
+                  Point#subtract
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#views'
+                  class="">
+                  Views
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#viewsdom'
+                  class="">
+                  Views.DOM
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#viewsdomrender'
+                  class="">
+                  Views.DOM#render
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#viewsdomrenderhexes'
+                  class="">
+                  Views.DOM#renderHexes
+                  
+                </a>
+                
+                </li>
+              
+            </ul>
+          </div>
+          <div class='mt1 h6 quiet'>
+            <a href='http://documentation.js.org/reading-documentation.html'>Need help reading this?</a>
+          </div>
+        </div>
+      </div>
+      <div class='fix-margin-3'>
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='grid'>
+      Grid
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Factory function for creating grids. It accepts optional hex settings that are passed directly to <a href="#hexfactory">HexFactory</a>. Several "shape" methods are exposed that return an array of hexes in a certain shape.</p>
+<p>A grid is <em>viewless</em>, i.e.: it's an abstract grid with undefined dimensions. If you want to render a tangible grid, use a View factory (e.g. the <a href="#viewsdom">DOM view</a>).</p>
+
+
+  <div class='pre p1 fill-light mt0'>Grid(hexSettings: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>?): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>hexSettings</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>?)</code>
+	    Optional settings that apply to 
+<em>all</em>
+ hexes in the grid. See 
+<a href="Hexfactory">Hexfactory</a>
+ for possible properties.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>:
+        An object with methods.
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">import</span> { Grid, HEX_ORIENTATIONS } <span class="hljs-keyword">from</span> <span class="hljs-string">'Honeycomb'</span>
+
+<span class="hljs-keyword">const</span> grid = Grid({
+    <span class="hljs-attr">size</span>: <span class="hljs-number">50</span>,
+    <span class="hljs-attr">orientation</span>: HEX_ORIENTATIONS.POINTY,
+    <span class="hljs-attr">template</span>: <span class="hljs-function"><span class="hljs-params">hex</span> =&gt;</span> <span class="hljs-string">`&lt;div class="hex"&gt;
+        x: <span class="hljs-subst">${hex.x}</span>
+        y: <span class="hljs-subst">${hex.y}</span>
+        z: <span class="hljs-subst">${hex.z}</span>
+    &lt;/div&gt;`</span>
+})
+
+grid.triangle(<span class="hljs-number">3</span>)</pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='gridcolsize'>
+      Grid#colSize
+    </h3>
+    
+    
+  </div>
+  
+
+  
+
+  <div class='pre p1 fill-light mt0'>Grid#colSize(): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></code>:
+        The width of a (vertical) column of hexes in the grid.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='gridhexagon'>
+      Grid#hexagon
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Creates a grid in the shape of a <a href="https://en.wikipedia.org/wiki/Hexagon">hexagon</a>.</p>
+
+
+  <div class='pre p1 fill-light mt0'>Grid#hexagon(radiusOrOptions: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>), center: <a href="#hex">Hex</a>?): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="#hex">Hex</a>></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>radiusOrOptions</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>))</code>
+	    The radius (in hexes) or an options object.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>center</span> <code class='quiet'>(<a href="#hex">Hex</a>?
+            = <code>Hex()</code>)</code>
+	    The center hex.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="#hex">Hex</a>></code>:
+        Array of hexes in a hexagon arrangement (very meta 😎).
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='gridhextopoint'>
+      Grid#hexToPoint
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Translates a hex coordinate to a point.</p>
+
+
+  <div class='pre p1 fill-light mt0'>Grid#hexToPoint(hex: <a href="#hex">Hex</a>): <a href="#point">Point</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>hex</span> <code class='quiet'>(<a href="#hex">Hex</a>)</code>
+	    The hex to translate from.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="#point">Point</a></code>:
+        The point to translate to.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='gridparallelogram'>
+      Grid#parallelogram
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Creates a grid in the shape of a <a href="https://en.wikipedia.org/wiki/Parallelogram">parallelogram</a>.</p>
+
+
+  <div class='pre p1 fill-light mt0'>Grid#parallelogram(widthOrOptions: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>), height: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>?, start: <a href="#hex">Hex</a>?, direction: (SE | SW | N)?): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="#hex">Hex</a>></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>widthOrOptions</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>))</code>
+	    The width (in hexes) or an options object.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>height</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>?)</code>
+	    The height (in hexes).
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>start</span> <code class='quiet'>(<a href="#hex">Hex</a>?
+            = <code>Hex()</code>)</code>
+	    The origin hex.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>direction</span> <code class='quiet'>((SE | SW | N)?
+            = <code>SE</code>)</code>
+	    The direction (from the start hex) in which to create the shape. Each direction corresponds to a different arrangement of hexes.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="#hex">Hex</a>></code>:
+        Array of hexes in a parallelogram arrangement.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='gridpointtohex'>
+      Grid#pointToHex
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Converts the passed 2-dimensional <a href="#point">point</a> to a hex.</p>
+
+
+  <div class='pre p1 fill-light mt0'>Grid#pointToHex(point: <a href="#point">Point</a>): <a href="#hex">Hex</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>point</span> <code class='quiet'>(<a href="#point">Point</a>)</code>
+	    The point to convert from.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="#hex">Hex</a></code>:
+        The hex (with rounded coordinates) the passed 2D point corresponds to.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='gridrectangle'>
+      Grid#rectangle
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Creates a grid in the shape of a <a href="https://en.wikipedia.org/wiki/Rectangle">rectangle</a>.</p>
+
+
+  <div class='pre p1 fill-light mt0'>Grid#rectangle(widthOrOptions: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>), height: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>?, start: <a href="#hex">Hex</a>?, direction: (E | NW | SW | SE | NE | W)?): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="#hex">Hex</a>></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>widthOrOptions</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>))</code>
+	    The width (in hexes) or an options object.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>height</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>?)</code>
+	    The height (in hexes).
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>start</span> <code class='quiet'>(<a href="#hex">Hex</a>?
+            = <code>Hex()</code>)</code>
+	    The origin hex.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>direction</span> <code class='quiet'>((E | NW | SW | SE | NE | W)?
+            = <code>E/SE</code>)</code>
+	    The direction (from the start hex) in which to create the shape. Each direction corresponds to a different arrangement of hexes. The default direction for pointy hexes is 'E' and 'SE' for flat hexes.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="#hex">Hex</a>></code>:
+        Array of hexes in a rectengular arrangement.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='gridrowsize'>
+      Grid#rowSize
+    </h3>
+    
+    
+  </div>
+  
+
+  
+
+  <div class='pre p1 fill-light mt0'>Grid#rowSize(): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></code>:
+        The height of a (horizontal) row of hexes in the grid.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='gridtriangle'>
+      Grid#triangle
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Creates a grid in the shape of a <a href="https://en.wikipedia.org/wiki/Equilateral_triangle">(equilateral) triangle</a>.</p>
+
+
+  <div class='pre p1 fill-light mt0'>Grid#triangle(sideOrOptions: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>), start: <a href="#hex">Hex</a>?, direction: (down | up)?): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="#hex">Hex</a>></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>sideOrOptions</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>))</code>
+	    The side length (in hexes) or an options object.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>start</span> <code class='quiet'>(<a href="#hex">Hex</a>?
+            = <code>Hex()</code>)</code>
+	    The origin hex.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>direction</span> <code class='quiet'>((down | up)?
+            = <code>down</code>)</code>
+	    The direction (from the start hex) in which to create the shape. Each direction corresponds to a different arrangement of hexes. In this case a triangle pointing up/down (with pointy hexes) or right/left (with flat hexes).
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="#hex">Hex</a>></code>:
+        Array of hexes in a triangular arrangement.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='hex'>
+      Hex
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Factory function for creating hexes.</p>
+<p>Coordinates not passed to the factory are inferred using the other coordinates:</p>
+<ul>
+<li>When two coordinates are passed, the third coordinate is set to the result of <a href="#hexthirdcoordinate">Hex.thirdCoordinate(firstCoordinate, secondCoordinate)</a>.</li>
+<li>When one coordinate is passed, the second coordinate is set to the first and the third coordinate is set to the result of <a href="#hexthirdcoordinate">Hex.thirdCoordinate(firstCoordinate, secondCoordinate)</a>.</li>
+<li>When nothing or a falsy value is passed, all coordinates are set to <code>0</code>.</li>
+</ul>
+
+
+  <div class='pre p1 fill-light mt0'>Hex(coordinates: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)?, y: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>?, z: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>?): <a href="#hex">Hex</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>coordinates</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)?
+            = <code>0</code>)</code>
+	    The x coordinate or an object containing any of the x, y and z coordinates.
+
+          </div>
+          
+          <table class='mt1 mb2 fixed-table h5 col-12'>
+            <colgroup>
+              <col width='30%' />
+              <col width='70%' />
+            </colgroup>
+            <thead>
+              <tr class='bold fill-light'>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class='mt1'>
+              
+                <tr>
+                  <td class='break-word'><span class='code bold'>coordinates.x</span> <code class='quiet'><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>?</code>
+                  
+                    (default <code>0</code>)
+                  </td>
+                  <td class='break-word'><span>The x coordinate.
+</span></td>
+                </tr>
+              
+                <tr>
+                  <td class='break-word'><span class='code bold'>coordinates.y</span> <code class='quiet'><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>?</code>
+                  
+                    (default <code>0</code>)
+                  </td>
+                  <td class='break-word'><span>The y coordinate.
+</span></td>
+                </tr>
+              
+                <tr>
+                  <td class='break-word'><span class='code bold'>coordinates.z</span> <code class='quiet'><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>?</code>
+                  
+                    (default <code>0</code>)
+                  </td>
+                  <td class='break-word'><span>The z coordinate.
+</span></td>
+                </tr>
+              
+            </tbody>
+          </table>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>y</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>?
+            = <code>0</code>)</code>
+	    The y coordinate.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>z</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>?
+            = <code>0</code>)</code>
+	    The z coordinate.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="#hex">Hex</a></code>:
+        A hex object. It always contains all three coordinates (
+<code>x</code>
+, 
+<code>y</code>
+ and 
+<code>z</code>
+).
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>Hex()            <span class="hljs-comment">// returns hex( x: 0, y: 0, z: 0 )</span>
+Hex(<span class="hljs-number">1</span>)           <span class="hljs-comment">// returns hex( x: 1, y: 1, z: -2 )</span>
+Hex(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>)        <span class="hljs-comment">// returns hex( x: 1, y: 2, z: -3 )</span>
+Hex(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">-3</span>)    <span class="hljs-comment">// returns hex( x: 1, y: 2, z: -3 )</span>
+Hex(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">5</span>)     <span class="hljs-comment">// coordinates don't sum up to 0; throws an error</span>
+
+Hex({ <span class="hljs-attr">x</span>: <span class="hljs-number">3</span> })    <span class="hljs-comment">// returns hex( x: 3, y: 3, z: -3 )</span>
+Hex({ <span class="hljs-attr">y</span>: <span class="hljs-number">3</span> })    <span class="hljs-comment">// returns hex( x: 3, y: 3, z: -6 )</span>
+Hex({ <span class="hljs-attr">z</span>: <span class="hljs-number">3</span> })    <span class="hljs-comment">// returns hex( x: 3, y: -6, z: 3 )</span></pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='hexadd'>
+      Hex.add
+    </h3>
+    
+    
+  </div>
+  
+
+  
+
+  <div class='pre p1 fill-light mt0'>Hex.add(firstHex: <a href="#hex">Hex</a>, secondHex: <a href="#hex">Hex</a>): <a href="#hex">Hex</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>firstHex</span> <code class='quiet'>(<a href="#hex">Hex</a>)</code>
+	    A hex.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>secondHex</span> <code class='quiet'>(<a href="#hex">Hex</a>)</code>
+	    The hex that will be added to the first.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="#hex">Hex</a></code>:
+        The sum of the passed hexes coordinates.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='hexdistance'>
+      Hex.distance
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Returns the amount of hexes between the current and the given hex.</p>
+
+
+  <div class='pre p1 fill-light mt0'>Hex.distance(startHex: <a href="#hex">Hex</a>, endHex: <a href="#hex">Hex</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>startHex</span> <code class='quiet'>(<a href="#hex">Hex</a>)</code>
+	    The start hex.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>endHex</span> <code class='quiet'>(<a href="#hex">Hex</a>)</code>
+	    The end hex.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></code>:
+        The amount of hexes between the passed start and end.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='hexhexesbetween'>
+      Hex.hexesBetween
+    </h3>
+    
+    
+  </div>
+  
+
+  
+
+  <div class='pre p1 fill-light mt0'>Hex.hexesBetween(firstHex: <a href="#hex">Hex</a>, secondHex: <a href="#hex">Hex</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="#hex">Hex</a>></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>firstHex</span> <code class='quiet'>(<a href="#hex">Hex</a>)</code>
+	    The first hex.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>secondHex</span> <code class='quiet'>(<a href="#hex">Hex</a>)</code>
+	    The second hex.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="#hex">Hex</a>></code>:
+        Hexes between the passed first and second hex, inclusive.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='hexisvalidsize'>
+      Hex.isValidSize
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Determines if the passed size is valid. Should be a positive <code>Number</code>.</p>
+
+
+  <div class='pre p1 fill-light mt0'>Hex.isValidSize(size: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>size</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>)</code>
+	    The size to validate.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+        Wheter the size is valid.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='hexlerp'>
+      Hex.lerp
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Returns an interpolation between the current hex and the passed hex for a <code>t</code> between 0 and 1.
+More info on <a href="https://en.wikipedia.org/wiki/Linear_interpolation">wikipedia</a>.</p>
+
+
+  <div class='pre p1 fill-light mt0'>Hex.lerp(firstHex: <a href="#hex">Hex</a>, secondHex: <a href="#hex">Hex</a>, t: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>): <a href="#hex">Hex</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>firstHex</span> <code class='quiet'>(<a href="#hex">Hex</a>)</code>
+	    The first hex.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>secondHex</span> <code class='quiet'>(<a href="#hex">Hex</a>)</code>
+	    The second hex.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>t</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>)</code>
+	    A "parameter" between 0 and 1.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="#hex">Hex</a></code>:
+        A new hex (with possibly fractional coordinates).
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='hexneighbor'>
+      Hex.neighbor
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Returns the neighboring hex in the given direction.</p>
+
+
+  <div class='pre p1 fill-light mt0'>Hex.neighbor(hex: <a href="#hex">Hex</a>, direction: (<code>0</code> | <code>1</code> | <code>2</code> | <code>3</code> | <code>4</code> | <code>5</code>)?, diagonal: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a>?): <a href="#hex">Hex</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>hex</span> <code class='quiet'>(<a href="#hex">Hex</a>)</code>
+	    The hex to get the neighboring hex from.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>direction</span> <code class='quiet'>((<code>0</code> | <code>1</code> | <code>2</code> | <code>3</code> | <code>4</code> | <code>5</code>)?
+            = <code>0</code>)</code>
+	    Any of the 6 directions. 
+<code>0</code>
+ is the Eastern direction (East-southeast when the hex is flat), 
+<code>1</code>
+ corresponds to 60° clockwise, 
+<code>2</code>
+ to 120° clockwise and so forth.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>diagonal</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a>?
+            = <code>false</code>)</code>
+	    Whether to look for a neighbor perpendicular to the hex's corner instead of its side.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="#hex">Hex</a></code>:
+        The neighboring hex.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='hexnudge'>
+      Hex.nudge
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Returns a new hex with a tiny offset from the passed hex. Useful for interpolating in a consistent direction.</p>
+
+
+  <div class='pre p1 fill-light mt0'>Hex.nudge(hex: <a href="#hex">Hex</a>): <a href="#hex">Hex</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>hex</span> <code class='quiet'>(<a href="#hex">Hex</a>)</code>
+	    The hex to nudge.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="#hex">Hex</a></code>:
+        A new hex with a minute offset.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='hexround'>
+      Hex.round
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Rounds the passed floating point hex coordinates to their nearest integer hex coordinates.</p>
+
+
+  <div class='pre p1 fill-light mt0'>Hex.round(hex: <a href="#hex">Hex</a>): <a href="#hex">Hex</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>hex</span> <code class='quiet'>(<a href="#hex">Hex</a>)</code>
+	    The hex to be rounded.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="#hex">Hex</a></code>:
+        A new hex with rounded coordinates.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='hexsubtract'>
+      Hex.subtract
+    </h3>
+    
+    
+  </div>
+  
+
+  
+
+  <div class='pre p1 fill-light mt0'>Hex.subtract(firstHex: <a href="#hex">Hex</a>, secondHex: <a href="#hex">Hex</a>): <a href="#hex">Hex</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>firstHex</span> <code class='quiet'>(<a href="#hex">Hex</a>)</code>
+	    A hex.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>secondHex</span> <code class='quiet'>(<a href="#hex">Hex</a>)</code>
+	    The hex that will be subtracted from the first.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="#hex">Hex</a></code>:
+        The difference between the passed hexes coordinates.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='hexthirdcoordinate'>
+      Hex.thirdCoordinate
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Calculates the third coordinate from the other two. The sum of all three coordinates should always be 0.</p>
+
+
+  <div class='pre p1 fill-light mt0'>Hex.thirdCoordinate(firstCoordinate: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>, secondCoordinate: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>firstCoordinate</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>)</code>
+	    The first other coordinate.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>secondCoordinate</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>)</code>
+	    The second other coordinate.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></code>:
+        The third coordinate.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='hexcenter'>
+      Hex#center
+    </h3>
+    
+    
+  </div>
+  
+
+  
+
+  <div class='pre p1 fill-light mt0'>Hex#center(): <a href="#point">Point</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="#point">Point</a></code>:
+        The relative center of any hex.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='hexcoordinates'>
+      Hex#coordinates
+    </h3>
+    
+    
+  </div>
+  
+
+  
+
+  <div class='pre p1 fill-light mt0'>Hex#coordinates(): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>:
+        The hex's x, y and z coordinates.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='hexheight'>
+      Hex#height
+    </h3>
+    
+    
+  </div>
+  
+
+  
+
+  <div class='pre p1 fill-light mt0'>Hex#height(): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></code>:
+        The (vertical) height of any hex.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='hexisflat'>
+      Hex#isFlat
+    </h3>
+    
+    
+  </div>
+  
+
+  
+
+  <div class='pre p1 fill-light mt0'>Hex#isFlat(): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+        Whether hexes have a flat ⬣ orientation.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='hexispointy'>
+      Hex#isPointy
+    </h3>
+    
+    
+  </div>
+  
+
+  
+
+  <div class='pre p1 fill-light mt0'>Hex#isPointy(): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+        Whether hexes have a pointy ⬢ orientation.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='hexoppositecornerdistance'>
+      Hex#oppositeCornerDistance
+    </h3>
+    
+    
+  </div>
+  
+
+  
+
+  <div class='pre p1 fill-light mt0'>Hex#oppositeCornerDistance(): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></code>:
+        The distance between opposite corners of a hex.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='hexoppositesidedistance'>
+      Hex#oppositeSideDistance
+    </h3>
+    
+    
+  </div>
+  
+
+  
+
+  <div class='pre p1 fill-light mt0'>Hex#oppositeSideDistance(): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></code>:
+        The distance between opposite sides of a hex.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='hextopoint'>
+      Hex#toPoint
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Converts the current hex to an (absolute) 2-dimensional <a href="#point">point</a>. Uses the hex's origin.</p>
+
+
+  <div class='pre p1 fill-light mt0'>Hex#toPoint(): <a href="#point">Point</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="#point">Point</a></code>:
+        The 2D point the hex corresponds to.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='hexview'>
+      Hex#view
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>It returns the result of calling the template function with the current hex.</p>
+
+
+  <div class='pre p1 fill-light mt0'>Hex#view(): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code>:
+        The view representation of the hex (usually a string).
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='hexwidth'>
+      Hex#width
+    </h3>
+    
+    
+  </div>
+  
+
+  
+
+  <div class='pre p1 fill-light mt0'>Hex#width(): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></code>:
+        The (horizontal) width of any hex.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='hexfactory'>
+      HexFactory
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Factory that produces a <a href="#hex">Hex</a> function to create hexes with. It accepts optional hex settings that are used to create a "family" of hexes that can be used in a grid (or individually). This "family" of hexes all share the same <code>prototype</code>.</p>
+
+
+  <div class='pre p1 fill-light mt0'>HexFactory($0: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>): <a href="#hex">Hex</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>$0</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+            = <code>{}</code>)</code>
+	    
+          </div>
+          
+          <table class='mt1 mb2 fixed-table h5 col-12'>
+            <colgroup>
+              <col width='30%' />
+              <col width='70%' />
+            </colgroup>
+            <thead>
+              <tr class='bold fill-light'>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class='mt1'>
+              
+                <tr>
+                  <td class='break-word'><span class='code bold'>$0.orientation</span> <code class='quiet'>(FLAT | POINTY)?</code>
+                  
+                    (default <code>FLAT</code>)
+                  </td>
+                  <td class='break-word'><span>All hexes are either POINTY ⬢ or FLAT ⬣.
+</span></td>
+                </tr>
+              
+                <tr>
+                  <td class='break-word'><span class='code bold'>$0.size</span> <code class='quiet'><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>?</code>
+                  
+                    (default <code>1</code>)
+                  </td>
+                  <td class='break-word'><span>Size of all hexes.
+</span></td>
+                </tr>
+              
+                <tr>
+                  <td class='break-word'><span class='code bold'>$0.origin</span> <code class='quiet'><a href="#point">Point</a>?</code>
+                  
+                    (default <code>Point()</code>)
+                  </td>
+                  <td class='break-word'><span>Used to convert the hex position to a point. Defaults to the top left.
+</span></td>
+                </tr>
+              
+                <tr>
+                  <td class='break-word'><span class='code bold'>$0.template</span> <code class='quiet'><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">Function</a>?</code>
+                  </td>
+                  <td class='break-word'><span>Template function that should return a (visual) representation of the hex. It gets passed the current hex when called. Could be an HTML string (e.g. 
+<code>'&#x3C;div class="hex">&#x3C;/div>'</code>
+) that can be parsed by a 
+<a href="#viewsdom">Views.DOM</a>
+ instance. A 
+<a href="#views">View</a>
+ uses the hex's 
+<a href="#hexview">Hex#view</a>
+ method to call the template function and produce a view.
+</span></td>
+                </tr>
+              
+            </tbody>
+          </table>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="#hex">Hex</a></code>:
+        A function to produce hexes, all with the same 
+<code>prototype</code>
+.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='orientations'>
+      ORIENTATIONS
+    </h3>
+    
+    
+  </div>
+  
+
+  
+
+  <div class='pre p1 fill-light mt0'>ORIENTATIONS</div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Static Members</div>
+    <div class="clearfix">
+  
+    <div class='border-bottom' id='ORIENTATIONS.FLAT'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>FLAT</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  
+
+  <div class='pre p1 fill-light mt0'>FLAT</div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='ORIENTATIONS.POINTY'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>POINTY</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  
+
+  <div class='pre p1 fill-light mt0'>POINTY</div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+</div>
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='point'>
+      Point
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Factory function for creating 2-dimensional points.</p>
+
+
+  <div class='pre p1 fill-light mt0'>Point(coordinatesOrX: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)?, y: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>?): <a href="#point">Point</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>coordinatesOrX</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)?
+            = <code>0</code>)</code>
+	    The x coordinate or an array or object of x and/or y coordinates.
+
+          </div>
+          
+          <table class='mt1 mb2 fixed-table h5 col-12'>
+            <colgroup>
+              <col width='30%' />
+              <col width='70%' />
+            </colgroup>
+            <thead>
+              <tr class='bold fill-light'>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class='mt1'>
+              
+                <tr>
+                  <td class='break-word'><span class='code bold'>coordinatesOrX.x</span> <code class='quiet'><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>?</code>
+                  
+                    (default <code>0</code>)
+                  </td>
+                  <td class='break-word'><span>The x coordinate.
+</span></td>
+                </tr>
+              
+                <tr>
+                  <td class='break-word'><span class='code bold'>coordinatesOrX.y</span> <code class='quiet'><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>?</code>
+                  
+                    (default <code>0</code>)
+                  </td>
+                  <td class='break-word'><span>The y coordinate.
+</span></td>
+                </tr>
+              
+            </tbody>
+          </table>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>y</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>?
+            = <code>0</code>)</code>
+	    The y coordinate.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="#point">Point</a></code>:
+        A point object.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='pointadd'>
+      Point#add
+    </h3>
+    
+    
+  </div>
+  
+
+  
+
+  <div class='pre p1 fill-light mt0'>Point#add(point: <a href="#point">Point</a>): <a href="#point">Point</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>point</span> <code class='quiet'>(<a href="#point">Point</a>)</code>
+	    The point to add to the current point.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="#point">Point</a></code>:
+        The sum of the passed point's coordinates to the current point's.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='pointdivide'>
+      Point#divide
+    </h3>
+    
+    
+  </div>
+  
+
+  
+
+  <div class='pre p1 fill-light mt0'>Point#divide(point: <a href="#point">Point</a>): <a href="#point">Point</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>point</span> <code class='quiet'>(<a href="#point">Point</a>)</code>
+	    The point where the current point is divided by.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="#point">Point</a></code>:
+        The division of the current point's coordinates and the passed point's.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='pointinvert'>
+      Point#invert
+    </h3>
+    
+    
+  </div>
+  
+
+  
+
+  <div class='pre p1 fill-light mt0'>Point#invert(): <a href="#point">Point</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="#point">Point</a></code>:
+        The inversion of the current point.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='pointmultiply'>
+      Point#multiply
+    </h3>
+    
+    
+  </div>
+  
+
+  
+
+  <div class='pre p1 fill-light mt0'>Point#multiply(point: <a href="#point">Point</a>): <a href="#point">Point</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>point</span> <code class='quiet'>(<a href="#point">Point</a>)</code>
+	    The point to multiply with the current point.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="#point">Point</a></code>:
+        The multiplication of the passed point's coordinates and the current point's.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='pointsubtract'>
+      Point#subtract
+    </h3>
+    
+    
+  </div>
+  
+
+  
+
+  <div class='pre p1 fill-light mt0'>Point#subtract(point: <a href="#point">Point</a>): <a href="#point">Point</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>point</span> <code class='quiet'>(<a href="#point">Point</a>)</code>
+	    The point to subtract from the current point.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="#point">Point</a></code>:
+        The difference between the passed point's coordinates and the current point's.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='views'>
+      Views
+    </h3>
+    
+    
+  </div>
+  
+
+  
+
+  <div class='pre p1 fill-light mt0'>Views</div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='viewsdom'>
+      Views.DOM
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Factory function for creating a DOM view object. This object can be used to render an array of hexes or a grid instance.</p>
+
+
+  <div class='pre p1 fill-light mt0'>Views.DOM(options: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>options</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
+	    An options object.
+
+          </div>
+          
+          <table class='mt1 mb2 fixed-table h5 col-12'>
+            <colgroup>
+              <col width='30%' />
+              <col width='70%' />
+            </colgroup>
+            <thead>
+              <tr class='bold fill-light'>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class='mt1'>
+              
+                <tr>
+                  <td class='break-word'><span class='code bold'>options.container</span> <code class='quiet'><a href="https://developer.mozilla.org/en-US/docs/Web/API/Node/nextSibling">Node</a></code>
+                  </td>
+                  <td class='break-word'><span>A DOM node to render hexes in.
+</span></td>
+                </tr>
+              
+                <tr>
+                  <td class='break-word'><span class='code bold'>options.origin</span> <code class='quiet'><a href="#point">Point</a>?</code>
+                  
+                    (default <code>Point()</code>)
+                  </td>
+                  <td class='break-word'><span>A point where the first hex (i.e. 
+<code>Hex(0, 0, 0)</code>
+) can be rendered.
+</span></td>
+                </tr>
+              
+            </tbody>
+          </table>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>:
+        A DOM View instance.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='viewsdomrender'>
+      Views.DOM#render
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Renders the passed <a href="#grid">grid</a> instance in the container. The container is completely covered with hexes.</p>
+
+
+  <div class='pre p1 fill-light mt0'>Views.DOM#render(grid: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>grid</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
+	    A grid instance.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>:
+        The DOM View object, for chaining.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='viewsdomrenderhexes'>
+      Views.DOM#renderHexes
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Renders the passed hexes in the container.</p>
+
+
+  <div class='pre p1 fill-light mt0'>Views.DOM#renderHexes(hexes: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="#hex">Hex</a>>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>hexes</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="#hex">Hex</a>>)</code>
+	    An array of hexes to render.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>:
+        The DOM View object, for chaining.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+      </div>
+    </div>
+  </div>
+  <script src='assets/anchor.js'></script>
+  <script src='assets/site.js'></script>
+</body>
+</html>
