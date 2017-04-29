@@ -2,7 +2,7 @@
   "name": "honeycomb-grid",
   "version": "0.3.1",
   "description": "Hex grid without views for usage in node or with optional multiple views for usage in the browser. Written in javascript.",
-  "main": "lib/honeycomb.min.js",
+  "main": "src/honeycomb.js",
   "scripts": {
     "build": "webpack",
     "coverage": "NODE_ENV=test nyc --reporter lcov --reporter text mocha --require ./test/config.js --recursive",
