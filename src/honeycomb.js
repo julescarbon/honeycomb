@@ -10,5 +10,6 @@ export {
     ORIENTATIONS as HEX_ORIENTATIONS,
     Grid,
     Point,
-    Views
+    Views,
+    HexFactory
 }
